@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html>
 <!-- This is the body part -->
+<style>
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: red;
+}
+
+
+</style>
 <body style="background-color:hsl(0, 15%, 92%);text-align:center;">
 <meta charset="UTF-8">
 
@@ -26,6 +48,11 @@ finally we will have prediction layer for the <mark>class prediction </mark>.
 
 </pre>
 
-
+<div class="navbar">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" class="right">Link</a>
+</div>
 </body>
 </html>
