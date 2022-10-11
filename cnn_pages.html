@@ -1,25 +1,51 @@
-  if (myVideo.paused) 
-    myVideo.play(); 
-  else 
-    myVideo.pause(); 
-} 
+<!DOCTYPE html>
+<html>
+<head>
 
-function makeBig() { 
-    myVideo.width = 540; 
-} 
+<style> 
+div.test {
+  white-space: nowrap; 
+  width: 200px; 
+  overflow: hidden; 
+  border: 1px solid #000000;
+}
 
-function makeSmall() { 
-    myVideo.width = 320; 
-} 
+div.test:hover {
+  overflow: visible;
+}
+p.test {
+  width: 11em; 
+  border: 1px solid #000000;
+  word-wrap: break-word;
+}
 
-function makeNormal() { 
-    myVideo.width = 420; 
-} 
-</script> 
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#myDiv {
+  transform: rotate(20deg);
+}
+
+div#myhover {
+  width: 100px;
+  height: 20px;
+  background: red;
+  transition: width 2s;
+  
+}
+
+div:hover {
+  width: 400px;
+}
+</style>
 
 
 <!-- This is a header part-->
-<h1 style="font-size:300%;" > <ins>CNN Architectures</ins>  &#128512 </h1>
+<h style="font-size:300%;" > <ins>CNN Architectures</ins>  &#128512 </h>
 <hr>
 <!-- This is a sub header part-->
 
@@ -31,6 +57,7 @@ function makeNormal() {
 
 <!-- This is a paragraph part with style attributes -->
 
+
 <pre style="color:tomato;font-family:verdana;font-size:100%;background-color:LightGray;border:2px solid Violet"> 
 First we have the input layer, then <mark>convolutional layer</mark> for the convolved output,
 then <q>we will have <em style="color:blue;">pooling layer</em> for less numbers of features</q> and 
@@ -38,18 +65,27 @@ then, we will have fully connected layers and
 finally we will have prediction layer for the <mark>class prediction </mark>.
 
 </pre>
+<h3>Enter your name here.</h3>
 <form>
+  <input type="text" placeholder="Search..">
+
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe">
+
 </form>
 
-<div class="navbar">
+<div  class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box </div>
+<p class="test">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+<div id="myDiv">
+This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.
+</div>
+
+<div id = 'myhover' class="navbar">
   <a href="#">FACEBOOK</a>
-  <a href="#">TWITTER</a>
   <a href="#">INSTAGRAM</a>
   <a href="#">TELEGRAM</a>
+  <input type="text" placeholder="Search..">
 </div>
 
 
